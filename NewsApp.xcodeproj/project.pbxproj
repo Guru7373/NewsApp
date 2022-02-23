@@ -16,6 +16,8 @@
 		77F1FCF427C673F2009EF400 /* NewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F1FCF327C673F2009EF400 /* NewsAppTests.swift */; };
 		77F1FCFE27C673F2009EF400 /* NewsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F1FCFD27C673F2009EF400 /* NewsAppUITests.swift */; };
 		77F1FD0027C673F2009EF400 /* NewsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F1FCFF27C673F2009EF400 /* NewsAppUITestsLaunchTests.swift */; };
+		77F1FD0E27C6741D009EF400 /* RestAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F1FD0D27C6741D009EF400 /* RestAPIManager.swift */; };
+		77F1FD1127C678F2009EF400 /* NewsArticleModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F1FD1027C678F1009EF400 /* NewsArticleModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		77F1FCF927C673F2009EF400 /* NewsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F1FCFD27C673F2009EF400 /* NewsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppUITests.swift; sourceTree = "<group>"; };
 		77F1FCFF27C673F2009EF400 /* NewsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		77F1FD0D27C6741D009EF400 /* RestAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIManager.swift; sourceTree = "<group>"; };
+		77F1FD1027C678F1009EF400 /* NewsArticleModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,9 @@
 			children = (
 				77F1FCDC27C673E8009EF400 /* AppDelegate.swift */,
 				77F1FCDE27C673E8009EF400 /* SceneDelegate.swift */,
-				77F1FCE027C673E8009EF400 /* ViewController.swift */,
+				77F1FD1227C67909009EF400 /* Controllers */,
+				77F1FD0F27C678D8009EF400 /* Models */,
+				77F1FD0C27C67407009EF400 /* NetworkManager */,
 				77F1FCE227C673E9009EF400 /* Main.storyboard */,
 				77F1FCE527C673F1009EF400 /* Assets.xcassets */,
 				77F1FCE727C673F1009EF400 /* LaunchScreen.storyboard */,
@@ -125,6 +131,30 @@
 				77F1FCFF27C673F2009EF400 /* NewsAppUITestsLaunchTests.swift */,
 			);
 			path = NewsAppUITests;
+			sourceTree = "<group>";
+		};
+		77F1FD0C27C67407009EF400 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				77F1FD0D27C6741D009EF400 /* RestAPIManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		77F1FD0F27C678D8009EF400 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				77F1FD1027C678F1009EF400 /* NewsArticleModal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		77F1FD1227C67909009EF400 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				77F1FCE027C673E8009EF400 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +290,8 @@
 			files = (
 				77F1FCE127C673E8009EF400 /* ViewController.swift in Sources */,
 				77F1FCDD27C673E8009EF400 /* AppDelegate.swift in Sources */,
+				77F1FD1127C678F2009EF400 /* NewsArticleModal.swift in Sources */,
+				77F1FD0E27C6741D009EF400 /* RestAPIManager.swift in Sources */,
 				77F1FCDF27C673E8009EF400 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
